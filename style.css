@@ -1,0 +1,136 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:  'IBM Plex Sans', sans-serif
+}
+
+header{
+    display: flex;
+    width: 100vw;
+    height: 36.5vh;
+    /* background-color:  rgb(35, 30, 30); */
+    background-color:  #231f20;
+    color: white;
+    justify-content: flex-end;
+    text-align: end;
+}
+
+.logoContainer{
+    width: 600px;
+    height: 100%;
+    /* border: solid 2px red; */
+    text-align: end;
+}
+header > .logoContainer > h1{
+    /* display: flex; */
+    font-size: 40px;
+    /* align-content: space-around; */
+}
+.logo {
+    position: relative;
+    /* border: solid green; */
+    width: 76%;
+    height: 62%;
+    text-align: end;
+    vertical-align: middle;
+    line-height: 191px;
+    /* background-color: aqua; */
+    background-image: url('./img/logoPng.png');
+    background-size: 30vw;
+    background-repeat: no-repeat;  
+    left: 105px;
+    bottom: 11px;
+    transform: scale(1.17,1.05)
+}
+.info {
+    position: relative;
+    border: solid green;
+    width: 96%;
+    height: 45%;
+    text-align: end;
+    vertical-align: middle;
+    line-height: 50px;
+}
+.info > h2{
+    /* position: absolute; */
+    font-weight: bold;
+    /* color: aqua; */
+    font-size: 20px;
+    right: 30px
+}
+.info > p {
+    font-size: 20px
+}
+.logo > h1{
+    position: relative;
+    z-index: 9;
+    font-size: 68px;
+    letter-spacing: 6px
+}
+/* .logo > h1::after{
+    position: absolute;
+    content: 'it';
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: red; 
+    text-align: center;
+    vertical-align: middle;
+    line-height: 50px;
+    font-size: 40px;
+    color: black;
+    right: -45px;
+    top: 0px;
+    z-index: -1;
+} */
+/* .info{
+    border: solid  blueviolet;
+} */
+section{
+    display: flex;
+    width: 100vw;
+    height: 50.5vh;
+    /* border: solid 2px blue; */
+}
+
+.city{
+    width: 100%;
+    height: 100%;
+    background-image: url('./img/warsaw.jpg');
+    background-size: 102.9% 840px;
+    background-repeat: no-repeat;
+    background-position: 10% 43.2%;
+    
+     /* background-color: aqua */
+}
+footer{
+    position: relative;
+    display: flex;
+    width: 100vw;
+    height: 13vh;
+    /* background-color:  rgb(35, 30, 30); */
+    background-color: #231f20;
+    color: white;
+    /* text-align: center */
+    align-items: center;
+    justify-content: center;
+   
+}
+footer > article{
+    position: absolute;
+    width: 90%;
+    height: 60%;
+    font-size: 15px;  
+    text-align: center;
+    vertical-align: middle;
+    line-height: 15px;   
+    bottom: 11px;
+    /* font-stretch: condensed; */
+    /* border: solid 1px */
+} 
+footer > article > p{
+    transform: scale(1.050,1);
+    opacity: .7;
+    margin: 3px;
+}
