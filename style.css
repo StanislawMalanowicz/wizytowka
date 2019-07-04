@@ -102,21 +102,21 @@ article > p {
 }
 @media only screen and (max-width: 800px) { 
     .mainWidth{
-        width: 80vw
+        width: 86vw;
     }
     header{
-        height: calc(125px + 25vw);
+        height: calc(70px + 25vw);
     }
     section{
-       height: calc(180px + 15vw);
+       height: calc(230px + 15vw);
     }
     footer{
-        height: calc(160px + 1.5vw);
+        height: calc(220px + 1.5vw);
         /* border: solid */
     }
     img{
-        width: calc(270px + 1.5vw);
-        transform: translate(10px,0px)
+        width: calc(200px + 1.5vw);
+        transform: translate(20px,-10px)
     }
     .logo > h2{
         font-size: calc(9.1px + 1.5vw);
@@ -125,19 +125,22 @@ article > p {
         word-spacing: 0;
     }
     .logo > a{
-        transform: translate(0, -20px);
-        font-size: 18px;
+        transform: translate(0, -15px);
+        font-size: calc(9px + 1.5vw);
     }
     
     article > p {
-        font-size: 12px;
+        font-size: calc(6px + 1.5vw);
         color: white;
         font-weight: bold;
-        transform: translate(0, 30px)
+        /* line-height: 12px; */
+        height: 32px;
+        transform: translate(0, -15px);
+        
     }
     .city{
-        background-position: 55% 40%;
-        background-size: 1380px 
+        background-position: 48% 40%;
+        background-size: 1100px 
     }
    
 }
