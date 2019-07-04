@@ -1,136 +1,143 @@
 * {
+    background-color: #231f20;
     padding: 0;
     margin: 0;
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
     font-family:  'IBM Plex Sans', sans-serif
 }
-
+.mainWidth {
+    width: 90vw;
+    margin-left: auto;
+    margin-right: auto;
+    /* border: solid  red; */
+}
+/*  */
+:root{
+--backgroundColor: #231f20; 
+}
 header{
-    display: flex;
-    width: 100vw;
-    height: 36.5vh;
-    /* background-color:  rgb(35, 30, 30); */
-    background-color:  #231f20;
-    color: white;
-    justify-content: flex-end;
-    text-align: end;
+    height: 275px;
+    /* border: solid 1px greenyellow */
 }
-
 .logoContainer{
-    width: 600px;
-    height: 100%;
-    /* border: solid 2px red; */
-    text-align: end;
-}
-header > .logoContainer > h1{
-    /* display: flex; */
-    font-size: 40px;
-    /* align-content: space-around; */
-}
-.logo {
-    position: relative;
-    /* border: solid green; */
-    width: 76%;
-    height: 62%;
-    text-align: end;
-    vertical-align: middle;
-    line-height: 191px;
-    /* background-color: aqua; */
-    background-image: url('./img/logoPng.png');
-    background-size: 30vw;
-    background-repeat: no-repeat;  
-    left: 105px;
-    bottom: 11px;
-    transform: scale(1.17,1.05)
-}
-.info {
-    position: relative;
-    border: solid green;
-    width: 96%;
-    height: 45%;
-    text-align: end;
-    vertical-align: middle;
-    line-height: 50px;
-}
-.info > h2{
-    /* position: absolute; */
-    font-weight: bold;
-    /* color: aqua; */
-    font-size: 20px;
-    right: 30px
-}
-.info > p {
-    font-size: 20px
-}
-.logo > h1{
-    position: relative;
-    z-index: 9;
-    font-size: 68px;
-    letter-spacing: 6px
-}
-/* .logo > h1::after{
-    position: absolute;
-    content: 'it';
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background-color: red; 
-    text-align: center;
-    vertical-align: middle;
-    line-height: 50px;
-    font-size: 40px;
-    color: black;
-    right: -45px;
-    top: 0px;
-    z-index: -1;
-} */
-/* .info{
-    border: solid  blueviolet;
-} */
-section{
+    /* border: solid 1px blueviolet; */
     display: flex;
-    width: 100vw;
-    height: 50.5vh;
-    /* border: solid 2px blue; */
+    height: 100%;
+    /* background: brown; */
+    justify-content: flex-end
 }
+.logo{
+    display: flex;
+    position: relative;
+    /* border: solid red; */
+    width: 600px;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-around;
+}
+img{
+    /* position: absolute; */
+    width: 490px;
+    /* border: solid yellow  1px; */
+    /* bottom: 65px; */
+    transform: translate(34px, -16px)
+}
+.logo > h2{
+    color: white;
+    /* border: solid; */
+    transform: translate(0px, -43px);
+    letter-spacing: .7px;
+    word-spacing: 2px;
+}
+.logo > a{
+    color: white;
+    font-size: 23px;
+    transform: translate(0px, -35px);
+    opacity: .6;
+    text-decoration: none;
 
+}
+.logo > a:hover{
+    opacity: 1
+}
+section{
+    width: 100vw;
+    height: 382px;
+    /* border: solid rgb(117, 21, 214) */
+}
 .city{
     width: 100%;
     height: 100%;
     background-image: url('./img/warsaw.jpg');
-    background-size: 102.9% 840px;
+    background-size: 1500px;
     background-repeat: no-repeat;
     background-position: 10% 43.2%;
     
      /* background-color: aqua */
 }
+
 footer{
-    position: relative;
-    display: flex;
     width: 100vw;
-    height: 13vh;
-    /* background-color:  rgb(35, 30, 30); */
-    background-color: #231f20;
+    height: 90px;
+    /* border: solid brown */
+}
+article {
+    height: 100%;
+    /* border: solid green; */
     color: white;
-    /* text-align: center */
+    opacity: .8;
+    font-size: .99vw;
+    display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-   
-}
-footer > article{
-    position: absolute;
-    width: 90%;
-    height: 60%;
-    font-size: 15px;  
     text-align: center;
     vertical-align: middle;
-    line-height: 15px;   
-    bottom: 11px;
-    /* font-stretch: condensed; */
-    /* border: solid 1px */
-} 
-footer > article > p{
-    transform: scale(1.050,1);
-    opacity: .7;
-    margin: 3px;
+    line-height: 15px;
+}
+article > p {
+    font-size: 15px;
+    /* border: solid; */
+    transform: translate(0,12px)
+}
+@media only screen and (max-width: 800px) { 
+    .mainWidth{
+        width: 80vw
+    }
+    header{
+        height: calc(125px + 25vw);
+    }
+    section{
+       height: calc(180px + 15vw);
+    }
+    footer{
+        height: calc(160px + 1.5vw);
+        /* border: solid */
+    }
+    img{
+        width: calc(270px + 1.5vw);
+        transform: translate(10px,0px)
+    }
+    .logo > h2{
+        font-size: calc(9.1px + 1.5vw);
+        transform: translate(0, -16px);
+        letter-spacing: 0;
+        word-spacing: 0;
+    }
+    .logo > a{
+        transform: translate(0, -20px);
+        font-size: 18px;
+    }
+    
+    article > p {
+        font-size: 12px;
+        color: white;
+        font-weight: bold;
+        transform: translate(0, 30px)
+    }
+    .city{
+        background-position: 55% 40%;
+        background-size: 1380px 
+    }
+   
 }
