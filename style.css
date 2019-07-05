@@ -86,7 +86,7 @@ article {
     /* border: solid green; */
     color: white;
     opacity: .8;
-    font-size: .99vw;
+    /* font-size: 10px; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -130,12 +130,12 @@ article > p {
     }
     
     article > p {
-        font-size: calc(6px + 1.5vw);
+        font-size: calc(6px + 1.2vw);
         color: white;
         font-weight: bold;
-        /* line-height: 12px; */
-        height: 32px;
-        transform: translate(0, -15px);
+        /* line-height: 0; */
+        /* height: 55px; */
+        transform: translate(0, -35px) scale(1,1);
         
     }
     .city{
