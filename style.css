@@ -1,53 +1,40 @@
 * {
-    background-color: #231f20;
+    background-color: #231f20; 
     padding: 0;
     margin: 0;
-    /* box-sizing: border-box; */
     font-family:  'IBM Plex Sans', sans-serif
 }
 .mainWidth {
     width: 90vw;
     margin-left: auto;
     margin-right: auto;
-    /* border: solid  red; */
-}
-/*  */
-:root{
---backgroundColor: #231f20; 
 }
 header{
     height: 275px;
-    /* border: solid 1px greenyellow */
 }
 .logoContainer{
-    /* border: solid 1px blueviolet; */
     display: flex;
     height: 100%;
-    /* background: brown; */
     justify-content: flex-end
 }
 .logo{
     display: flex;
     position: relative;
-    /* border: solid red; */
     width: 600px;
     flex-direction: column;
     align-items: flex-end;
     justify-content: space-around;
 }
 img{
-    /* position: absolute; */
     width: 490px;
-    /* border: solid yellow  1px; */
-    /* bottom: 65px; */
     transform: translate(34px, -16px)
 }
 .logo > h2{
     color: white;
-    /* border: solid; */
     transform: translate(0px, -43px);
     letter-spacing: .7px;
     word-spacing: 2px;
+    text-align: right
 }
 .logo > a{
     color: white;
@@ -55,7 +42,6 @@ img{
     transform: translate(0px, -35px);
     opacity: .6;
     text-decoration: none;
-
 }
 .logo > a:hover{
     opacity: 1
@@ -63,7 +49,6 @@ img{
 section{
     width: 100vw;
     height: 382px;
-    /* border: solid rgb(117, 21, 214) */
 }
 .city{
     width: 100%;
@@ -72,21 +57,15 @@ section{
     background-size: 1500px;
     background-repeat: no-repeat;
     background-position: 10% 43.2%;
-    
-     /* background-color: aqua */
 }
-
 footer{
     width: 100vw;
     height: 90px;
-    /* border: solid brown */
 }
 article {
     height: 100%;
-    /* border: solid green; */
     color: white;
     opacity: .8;
-    /* font-size: 10px; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -97,7 +76,6 @@ article {
 }
 article > p {
     font-size: 15px;
-    /* border: solid; */
     transform: translate(0,12px)
 }
 @media only screen and (max-width: 800px) { 
@@ -112,7 +90,6 @@ article > p {
     }
     footer{
         height: calc(220px + 1.5vw);
-        /* border: solid */
     }
     img{
         width: calc(200px + 1.5vw);
@@ -133,14 +110,11 @@ article > p {
         font-size: calc(6px + 1.2vw);
         color: white;
         font-weight: bold;
-        /* line-height: 0; */
-        /* height: 55px; */
-        transform: translate(0, -35px) scale(1,1);
-        
+        transform: translate(0, -35px) scale(1,1);        
     }
     .city{
         background-position: 48% 40%;
-        background-size: 1100px 
+        background-size: 1100px ;
     }
    
 }
